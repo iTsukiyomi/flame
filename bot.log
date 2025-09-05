@@ -1,0 +1,859 @@
+2025-08-28 18:50:53,834 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 18:50:53,837 - discord.client - INFO - logging in using static token
+2025-08-28 18:50:56,017 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f086843b788c68366acac63cbaf8c299).
+2025-08-28 18:56:11,202 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 18:56:11,203 - discord.client - INFO - logging in using static token
+2025-08-28 18:56:13,331 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 185fce8922ccf97860273508a60df92f).
+2025-08-28 18:57:10,682 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 18:57:10,683 - discord.client - INFO - logging in using static token
+2025-08-28 18:57:12,567 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 914cc3f4d38aa88ecf90bcae0cf93fc4).
+2025-08-28 18:58:58,692 - root - ERROR - unexpected error in pokemonduel: Command raised an exception: RecursionError: maximum recursion depth exceeded
+2025-08-28 18:59:13,709 - root - ERROR - unexpected error in pokemonduel: Command raised an exception: RecursionError: maximum recursion depth exceeded
+2025-08-28 19:01:22,742 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 19:01:22,743 - discord.client - INFO - logging in using static token
+2025-08-28 19:01:28,151 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f03b2c03b6b3f4b18f2b049b16ac35c9).
+2025-08-28 20:22:14,949 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 20:22:14,951 - discord.client - INFO - logging in using static token
+2025-08-28 20:22:17,324 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2bc10e8d379045032d4107c257966596).
+2025-08-28 20:27:08,293 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 20:27:08,294 - discord.client - INFO - logging in using static token
+2025-08-28 20:27:10,333 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f69b91f8b27a59c77cc35b820243fc70).
+2025-08-28 20:31:45,866 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-28 20:31:45,867 - discord.client - INFO - logging in using static token
+2025-08-28 20:31:47,999 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0586d0a6b4f428ace3f372f40125b503).
+2025-08-28 23:38:40,353 - discord.gateway - WARNING - Shard ID None has stopped responding to the gateway. Closing and restarting.
+2025-08-28 23:38:50,190 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-08-31 17:15:53,721 - discord.client - ERROR - Attempting a reconnect in 0.63s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 413, in from_client
+    await ws.identify()
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 480, in identify
+    await self.call_hooks('before_identify', self.shard_id, initial=self._initial_identify)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\state.py", line 353, in call_hooks
+    await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 586, in _call_before_identify_hook
+    await self.before_identify_hook(shard_id, initial=initial)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 608, in before_identify_hook
+    await asyncio.sleep(5.0)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 718, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 506, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\timeouts.py", line 116, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+2025-08-31 17:15:56,965 - discord.client - ERROR - Attempting a reconnect in 1.04s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 17:16:04,974 - discord.client - ERROR - Attempting a reconnect in 2.97s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 17:16:07,974 - discord.client - ERROR - Attempting a reconnect in 15.34s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 17:16:24,324 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-08-31 17:16:30,540 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d14386fe9ed249e1fd3487caed5325d4).
+2025-08-31 17:16:31,065 - discord.gateway - WARNING - Shard ID None has stopped responding to the gateway. Closing and restarting.
+2025-08-31 18:43:27,618 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-31 18:43:27,799 - discord.client - INFO - logging in using static token
+2025-08-31 18:43:49,176 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 8f4ca11104065b19ba854a3839c2cc99).
+2025-08-31 18:50:31,086 - red.flamecogs.pokemonduel - ERROR - Error in PokemonDuel.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 256, in wrapped_run
+    winner = await battle.run()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 198, in run
+    self.msg += t1.selected_action.use(t1.current_pokemon, t2.current_pokemon, self)
+                ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\move.py", line 121, in use
+    msg += attacker.held_item.activate_on_move(self, battle)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\misc.py", line 1121, in __getattr__
+    raise AttributeError(f"{attr} is not an attribute of {self.__class__.__name__}.")
+AttributeError: activate_on_move is not an attribute of HeldItem.. Did you mean: 'activate_on_damage'?
+2025-08-31 18:54:54,694 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-08-31 18:54:54,707 - discord.client - INFO - logging in using static token
+2025-08-31 18:54:59,278 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 498eb929959fbbe700b86f79aba58a75).
+2025-08-31 18:55:53,829 - discord.gateway - WARNING - Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\main.py", line 62, in <module>
+    asyncio.run(main())
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2042, in _run_once
+    handle._run()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1421, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1418, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1685, in invoke
+    await super().invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 284, in pokemonduel
+    await self._start_duel(ctx, opponent)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 329, in _start_duel
+    party = [await DuelPokemon.create(ctx, p) for p in party]
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\pokemon.py", line 2600, in create
+    can_still_evolve = bool(await find_one(ctx, "pfile", {"evolves_from_species_id": pid}))
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\data.py", line 37, in find_one
+    results = await find(ctx, db, filter)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\data.py", line 14, in find
+    with open(path, 'r', encoding='utf-8') as f:
+
+2025-08-31 18:56:39,818 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:05:46,109 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:21,657 - discord.gateway - WARNING - Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\main.py", line 62, in <module>
+    asyncio.run(main())
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2042, in _run_once
+    handle._run()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1421, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1418, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1685, in invoke
+    await super().invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 284, in pokemonduel
+    await self._start_duel(ctx, opponent)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 336, in _start_duel
+    winner = await self.wrapped_run(battle)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 256, in wrapped_run
+    winner = await battle.run()
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 140, in run
+    battle_view = await generate_main_battle_message(self)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\data.py", line 469, in generate_main_battle_message
+    os.remove(image_path)
+
+2025-08-31 19:07:31,933 - discord.gateway - WARNING - Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\main.py", line 62, in <module>
+    asyncio.run(main())
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2042, in _run_once
+    handle._run()
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1421, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1418, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1685, in invoke
+    await super().invoke(ctx)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 284, in pokemonduel
+    await self._start_duel(ctx, opponent)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 336, in _start_duel
+    winner = await self.wrapped_run(battle)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 256, in wrapped_run
+    winner = await battle.run()
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 140, in run
+    battle_view = await generate_main_battle_message(self)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\data.py", line 469, in generate_main_battle_message
+    os.remove(image_path)
+
+2025-08-31 19:07:32,052 - discord.client - ERROR - Attempting a reconnect in 1.96s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 727, in connect
+    await self.ws.poll_event()
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 635, in poll_event
+    await self.received_message(msg.data)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 540, in received_message
+    await self.send_as_json(beat)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 671, in send_as_json
+    await self.send(utils._to_json(data))
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 667, in send
+    await self.socket.send_str(data)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client_ws.py", line 245, in send_str
+    await self._writer.send_frame(
+        data.encode("utf-8"), WSMsgType.TEXT, compress=compress
+    )
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\_websocket\writer.py", line 126, in send_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+2025-08-31 19:07:32,625 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:32,870 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:32,880 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:32,892 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:32,904 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:32,909 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:34,872 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 498eb929959fbbe700b86f79aba58a75.
+2025-08-31 19:07:35,224 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:07:35,245 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:10:39,620 - red.flamecogs.pokemonduel - ERROR - Exception in a button.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\ui\view.py", line 555, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\buttons.py", line 131, in actions
+    await interaction.response.send_message(content="Pick an action:", view=view, ephemeral=True)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-08-31 19:28:15,780 - discord.client - ERROR - Attempting a reconnect in 2.84s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 19:28:19,961 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-08-31 19:28:32,729 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e6cee56ad642911b4323cc7427aa47b4).
+2025-08-31 19:33:54,756 - discord.client - ERROR - Attempting a reconnect in 2.62s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 19:33:59,051 - discord.client - ERROR - Attempting a reconnect in 0.63s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 724, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 383, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\http.py", line 566, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 1067, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-08-31 19:34:02,059 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e6cee56ad642911b4323cc7427aa47b4.
+2025-08-31 19:35:01,868 - discord.client - ERROR - Attempting a reconnect in 21.87s
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\client.py", line 727, in connect
+    await self.ws.poll_event()
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 635, in poll_event
+    await self.received_message(msg.data)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 540, in received_message
+    await self.send_as_json(beat)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 671, in send_as_json
+    await self.send(utils._to_json(data))
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\discord\gateway.py", line 667, in send
+    await self.socket.send_str(data)
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\client_ws.py", line 245, in send_str
+    await self._writer.send_frame(
+        data.encode("utf-8"), WSMsgType.TEXT, compress=compress
+    )
+  File "C:\Users\Gojo\Desktop\projects\flame\.venv\Lib\site-packages\aiohttp\_websocket\writer.py", line 126, in send_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+2025-08-31 19:35:27,678 - discord.gateway - INFO - Shard ID None has successfully RESUMED session e6cee56ad642911b4323cc7427aa47b4.
+2025-09-05 13:41:57,063 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-09-05 13:41:57,116 - discord.client - INFO - logging in using static token
+2025-09-05 13:42:00,910 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 7bf08869121f8c44db1c09c6cd8489b2).
+2025-09-05 13:46:34,295 - red.flamecogs.pokemonduel - ERROR - Error in PokemonDuel.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 256, in wrapped_run
+    winner = await battle.run()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 159, in run
+    t1, t2 = self.who_first()
+             ~~~~~~~~~~~~~~^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 343, in who_first
+    prio1 = self.trainer1.selected_action.get_priority(self.trainer1.current_pokemon, self.trainer2.current_pokemon, self)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Move' object has no attribute 'get_priority'
+2025-09-05 13:54:43,502 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-09-05 13:54:43,504 - discord.client - INFO - logging in using static token
+2025-09-05 13:54:45,786 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 1347126acd45c3bd3b93bcbaad88dc71).
+2025-09-05 13:55:34,740 - red.flamecogs.pokemonduel - ERROR - Error in PokemonDuel.
+Traceback (most recent call last):
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\commands.py", line 256, in wrapped_run
+    winner = await battle.run()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\battle.py", line 198, in run
+    self.msg += t1.selected_action.use(t1.current_pokemon, t2.current_pokemon, self)
+                ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gojo\Desktop\projects\flame\pokemonduel\move.py", line 97, in use
+    current_type = self.get_type(attacker, defender, battle)
+                   ^^^^^^^^^^^^^
+AttributeError: 'Move' object has no attribute 'get_type'
+2025-09-05 14:12:06,154 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 50.2s behind.
+2025-09-05 14:25:03,941 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-09-05 14:25:03,957 - discord.client - INFO - logging in using static token
+2025-09-05 14:25:06,286 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 63d2fc2ec112d74cf3c5e1cc32288a40).
